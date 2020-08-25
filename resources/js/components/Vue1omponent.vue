@@ -1,12 +1,13 @@
 <template>
     <div class="container">
      <form @submit.prevent>
+       <h1>{{total}}</h1>
        <input v-model="surname" >
        <h1>Vue Js component {{surname}} {{getcount}}</h1> 
        <button type="submit" v-on:click="alert" class="btn btn-primary ">event</button>
      </form>
        <test  :messages="messages"></test>
-       <h1>{{total}}</h1>
+      
 
     </div>
 </template>    
@@ -19,7 +20,7 @@ import {mapGetters}  from 'vuex'
          return {
              messages: [1,2,10],
              arr: [1,2,9],
-             surname: 'baldryan',
+             surname: 'Baldryan',
             
              }
      },

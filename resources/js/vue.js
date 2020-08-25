@@ -26,7 +26,6 @@ const routes = [
     { path: '/vue2', component: Vue2 }
   ]
 
-
   const router = new VueRouter({
     mode: 'history',
     routes
